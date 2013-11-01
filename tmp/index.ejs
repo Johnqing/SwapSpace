@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> 借书喽~ </title>
+<style type="text/css">
+	a{
+		margin: 5px;
+	}
+</style>
+ </head>
+
+ <body>
+	<% keyArr.forEach(function(key){ %>
+		<h1><%= key %></h1>
+		<% types[key].forEach(function(type){ %>
+			<a href="<%= type.dburl %>" target="_blank"><%= type.bookname %></a>
+		<% }) %>
+	<% }) %>
+ </body>
+</html>

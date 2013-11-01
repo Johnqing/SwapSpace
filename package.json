@@ -1,0 +1,10 @@
+{
+	"name": "ws",
+	"version": "0.0.1",
+	"description": "",
+	"git repository": "",
+	"author": "johnqing",
+	"dependencies": {
+		"ejs": "*"
+	}
+}
