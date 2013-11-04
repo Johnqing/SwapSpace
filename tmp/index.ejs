@@ -14,7 +14,7 @@
 	<% keyArr.forEach(function(key){ %>
 		<h1><%= key %></h1>
 		<% types[key].forEach(function(type){ %>
-			<a href="<%= type.dburl %>" target="_blank"><%= type.bookname %></a>
+			<a href="<%= type.dburl %>" target="_blank" id="<%= type.id %>"><%= type.bookname %></a>
 		<% }) %>
 	<% }) %>
  </body>

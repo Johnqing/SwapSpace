@@ -32,7 +32,8 @@ queryParse = (queryStr) ->
 # 写入配置文件
 writeConfig = (data)->
 	data.createTime = +new Date()
-	fileName = path.join DATAPATH, (++info.totalCount) + '.json'
+	data.id = ++info.totalCount
+	fileName = path.join DATAPATH, data.id + '.json'
 	fs.writeFile fileName, JSON.stringify(data), (err) ->
 		if err
 			throw err
